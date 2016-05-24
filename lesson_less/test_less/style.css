@@ -1,0 +1,47 @@
+/* css 显示注释 */
+body {
+  background: #f9f9f9;
+}
+h1 {
+  background: #f9f9f9;
+}
+#header {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+#footer {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+#header h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+#header p {
+  font-size: 12px;
+}
+#header p a {
+  text-decoration: none;
+}
+#header p a:hover {
+  border-width: 1px;
+}
+.span.span2 {
+  font-size: 30px;
+}
+#header {
+  color: #333333;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  background: #842210;
+  width: 100px;
+  height: 100px;
+}
+#footer {
+  color: #114411;
+  background: #57160a;
+  width: 200px;
+  height: 200px;
+}

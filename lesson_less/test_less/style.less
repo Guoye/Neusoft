@@ -1,0 +1,132 @@
+/* css 显示注释 */
+// 只在less显示注释
+@color: #f9f9f9;
+body{
+	background: @color;
+}
+h1{
+	background: @color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mixins
+
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+#header {
+  .rounded-corners;
+}
+#footer {
+  .rounded-corners(10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 嵌套
+
+#header {
+  h1 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  p { font-size: 12px;
+    a { text-decoration: none;
+      &:hover { border-width: 1px }
+    }
+  }
+}
+.span.span2{
+  font-size: 30px;
+}
+#header h1{}
+#header p a{}
+#header p a:hover{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 运算&函数
+
+@the-border: 1px solid #000;
+@base-color: #111;
+@red:        #842210;
+@margin: 10px;
+@width: 100px;
+@height: 100px;
+
+#header {
+  color: @base-color * 3;
+  border: @the-border;
+  margin-bottom: @margin * 2;
+  background: @red;
+  width: @width;
+  height: @height;
+}
+#footer { 
+  color: @base-color + #003300;
+  background: darken(@red, 10%);
+  width: @width * 2;
+  height: @height * 2;
+}
