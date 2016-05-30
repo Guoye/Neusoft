@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		header{display: none;background: black;color: #fff;}
+		#content{background: #777;min-height: 50px;width: 50%;float: left;}
+		#sidebar{background: #eee;min-height: 50px;width: 50%;float: left;}
+		/* 当浏览器的可视区域小于980px */
+		@media screen and ( max-width: 980px ) {
+			#wrap {width: 90%; margin:0 auto;}
+			#content {width: 70%;}
+			#sidebar {width: 30%;}
+			footer {margin-top: 10px;background: #aaa;}
+		}
+		/* 当浏览器的可视区域小于650px */
+		@media screen and ( max-width: 650px ) {
+			header {display: block;}
+			#content {width: auto; float: none; margin: 20px 0;}
+			#sidebar {width: 100%; float: none; margin: 20px 0;}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		头部
+	</header>
+	<section>
+		<div id="sidebar">sidebar</div>
+		<div id="content">content</div>
+	</section>
+	<footer>
+		脚部
+	</footer>
+</body>
+</html>
